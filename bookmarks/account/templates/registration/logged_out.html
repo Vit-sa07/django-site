@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base.html' %}
+{% block title %} Выйти {% endblock %}
 
-</body>
-</html>
+{% block content %}
+    <h1>Выйти</h1>
+    <p>
+        Вы успешно вышли!
+        Вы можете <a href="{% url "login" %}"> снова войти </a>
+    </p>
+{% endblock %}
