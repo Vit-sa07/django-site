@@ -123,3 +123,17 @@ LOGIN_URL = 'login'
 LOGOUT_URL = 'logout'
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = 'smtp.yandex.ru'
+EMAIL_PORT = 587  # 465 - SSl
+EMAIL_USE_TLS = True
+
+EMAIL_HOST_USER = 'sevtsov.vitaly@yandex.ru'
+EMAIL_HOST_PASSWORD = 'vsxlxswpetdfkruc'
+
+EMAIL_SERVER = EMAIL_HOST_USER
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
+
+
+
+
